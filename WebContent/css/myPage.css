@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+#main {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction : column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../media/mypage-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.container {
+	width: 50%;
+	height: 50%;
+	background-color: rgba(255, 255, 255, .5);
+	box-shadow: 0 0 15px #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.container:nth-child(1) {
+	margin : 200px auto 50px;
+}
+
+.container table.my-info tr {
+	display : block;
+	margin : 10px 0;
+}
+.container table.my-info th,
+.container table.my-info td {
+	font-size: 2.5vw;
+}
+.container table.my-info th {
+	width: 15vw;
+	text-align: left;
+}
+#main .container table.my-info .btn-group {
+	display : block;
+	text-align: right;
+	margin : 15px 0;
+}
+
+#main .container table.teaOrder {
+	 width: 100% ;
+}
+#main .container table.teaOrder th,
+#main .container table.teaOrder td {
+	font-size: 1rem;
+	padding : 2px 5px;
+	border: 1px solid #000;
+	width: (100/7)%;
+	height: 15px;
+	text-align: center;
+}

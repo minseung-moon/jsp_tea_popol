@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css');
+
+* {
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+.inner {
+    /* background-color: blue; */
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+a {
+    color : #000;
+    text-decoration: none;
+}
+body {
+    font-family: 'Playfair Display', serif;
+}
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    transform: translate(0, 40px);
+    transition: transform 1s;
+    z-index: 99;
+}
+.btn {
+	font-size:1.5rem;
+	background-color: #79ff2b;
+	color : #fff;
+	outline: none;
+	border: 1px solid #418718;
+	border-radius : 3px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.btn:hover {
+	border : 1px solid #79ff2b;
+	background-color: #418718;
+}
+
+.btn.btn-flip {
+	background-color: #e3c027;
+	border: 1px solid #bda020;
+}
+.btn.btn-flip:hover {
+	background-color: #bda020;
+	border: 1px solid #e3c027;
+}

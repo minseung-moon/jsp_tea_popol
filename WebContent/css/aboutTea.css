@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+#main {
+	min-height: 100vh;
+}
+
+#main .inner {
+	padding: 100px 0;
+}
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.list .up-on-scroll {
+	margin-top: 20px;
+	transition: transform 0.7s, opacity 1s;
+}
+
+.img-wrap {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	max-height: 500px;
+}
+
+.img-wrap .image {
+	object-fit: contain;
+	max-height: 300px;
+	max-width: 500px;
+	width: 100%;
+}
+/*https://blueshw.github.io/2019/10/13/show-items-on-scroll/*/
+/*https://www.python2.net/questions-808556.html*/
+/*https://nykim.work/56*/

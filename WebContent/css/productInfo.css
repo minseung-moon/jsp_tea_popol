@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+	#main {
+		min-height: 100vh;
+		display: flex;
+		justify-content : center;
+		align-items : center;
+	}
+	#main table.product {
+            border-collapse: collapse;
+            width: 100%;
+            margin : 0 auto;
+    }
+    #main table.product,
+    #main table.product th,
+    #main table.product td {
+        border: 1px solid #000;
+		padding : 10px 5px;
+     }
+     #main table.product td.img-space,
+     #main table.product tr td img {
+    	width: 300px;
+    }
+     
+     #main table.product .btn {
+     	font-size: 1rem;
+     	padding : 2px 5px; 
+     }
+     #main table.product .order-form {
+     	text-align: center;
+     }
+     #main table.product .btn-group {
+     	text-align: right;
+     }

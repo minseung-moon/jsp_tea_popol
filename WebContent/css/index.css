@@ -1,0 +1,305 @@
+@CHARSET "UTF-8";
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+#main .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #cfdac8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+#main .banner video {
+    position: absolute;
+    object-fit: cover;
+}
+#main .banner .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #7c9473;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: 2s 2.5s forwards blind;
+}
+#main .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main .banner p {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    opacity: 0;
+    animation: opacity0to1 1.5s 1s forwards linear;
+}
+#main .banner p:first-child {
+    margin-bottom: 50px;
+}
+
+#main .about-tea {
+    height: 100vh;
+    background-color: #7c9473;
+    background-image: url('../media/teabg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#main .about-tea .inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#main .about-tea .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #000;
+}
+#main .about-tea a:first-child .card {
+    color: #7c9473;
+}
+#main .about-tea a:nth-child(2) .card {
+    color: #cc7e00;
+}
+#main .about-tea a:nth-child(3) .card {
+    color: #271310;
+}
+#main .about-tea a:last-child .card {
+    color: #0b181e;
+}
+#main .about-tea .card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+#main .about-tea .card p {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    transform: translateY(80px);
+    transition: 1s;
+}
+#main .about-tea .card:hover p {
+    transform: translateY(0px);
+}
+#main .about-tea .card:hover img {
+    transform: scale(1.2);
+}
+
+#main .for-the-table {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../media/forthetable.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#main .for-the-table a {
+    position: absolute;
+    transition: .5s;
+}
+#main .for-the-table a:hover {
+    transform: translateY(-20px);
+}
+#main .for-the-table a img {
+    width: 350px;
+}
+#main .for-the-table a:nth-of-type(1) {
+    bottom: 0px;
+    left: 100px;
+}
+#main .for-the-table a:nth-of-type(2) {
+    bottom: 50px;
+    right: 100px;
+}
+#main .for-the-table a:nth-of-type(3) {
+    top: 200px;
+    right: 300px;
+}
+#main .for-the-table .mark {
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #000;
+    position: absolute;
+    font-weight: 700;
+}
+#main .for-the-table a:hover .mark{
+    transform: translateY(-20px);
+}
+#main .for-the-table a:nth-of-type(1) .mark{
+    background-color: #ebefee;
+    bottom: 350px;
+    left: 100px;
+}
+#main .for-the-table a:nth-of-type(2) .mark{
+    background-color: #cfc6bd;
+    bottom: 270px;
+    left: 200px;
+}
+#main .for-the-table a:nth-of-type(3) .mark{
+    background-color: #d7a559;
+    bottom: 270px;
+    left: 40px;
+}
+
+#main .brand-shop {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#main .brand-shop .brand {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 1s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main .brand-shop .brand.brand01 {
+    background-image: url('../media/twg.jpg');
+    clip-path: polygon(0 0, 34% 0, 34% 100%, 0% 100%);
+}
+#main .brand-shop .brand.brand02 {
+    background-image: url('../media/fortnum&mason.jpg');
+    clip-path: polygon(34% 0, 67% 0, 67% 100%, 34% 100%);
+}
+#main .brand-shop .brand.brand03 {
+    background-image: url('../media/MariageFreres.jpg');
+    clip-path: polygon(67% 0, 100% 0, 100% 100%, 67% 100%);
+}
+#main .brand-shop .brand.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#main .brand-shop .brand:hover {
+    z-index: 98;
+}
+#main .brand-shop .brand .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+}
+#main .brand-shop .brand .content h2 {
+    color: #fff;
+    font-size: 12vw;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 10px #000;
+}
+#main .brand-shop .brand .content .brandBtn{
+    color:  rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 2vw;
+}
+#main .brand-shop .brand .content .brandBtn:hover {
+    color:  rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color:  rgba(0, 0, 0, 0.7);
+}
+#main .brand-shop .brand.active .content {
+    opacity: 1;
+    transition-delay: .5s;
+}
+
+@keyframes blind {
+	from {
+		height: 100%;
+	} to {
+		height: 0%;
+        display: none;
+	}
+}
+
+@keyframes opacity0to1 {
+	from { 
+		opacity:0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@media ( max-width : 1200px) {
+	#main .for-the-table a:nth-of-type(1) {
+		bottom: 0px;
+		left: 0px;
+	}
+	#main .for-the-table a:nth-of-type(2) {
+		bottom: 50px;
+		right: 0px;
+	}
+	#main .for-the-table a:nth-of-type(3) {
+		top: 200px;
+		right: 160px;
+	}
+}
+
+@media ( max-width : 1024px) {
+	#main .banner video {
+		height: 100vh;
+	}
+	#main .about-tea .card {
+		width: 30vw;
+		height: 40vw;
+	}
+	#main .about-tea .card p {
+		font-size: 3vw;
+	}
+	#main .for-the-table a img {
+		width: 250px;
+	}
+	#main .for-the-table a:nth-of-type(1) {
+		top: 0px;
+		left: 100px;
+	}
+	#main .for-the-table a:nth-of-type(2) {
+		top: 300px;
+		right: 100px;
+	}
+	#main .for-the-table a:nth-of-type(3) {
+		top: 550px;
+		left: 100px;
+	}
+	#main .for-the-table .inner {
+		width: 100%;
+	}
+	#main .for-the-table a:nth-of-type(1) .mark {
+		background-color: blue;
+		bottom: 800px;
+		left: 250px;
+	}
+}

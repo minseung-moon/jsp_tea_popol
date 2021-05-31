@@ -1,0 +1,116 @@
+@CHARSET "UTF-8";
+
+#main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../media/community-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+#main::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.6);
+	z-index: 0;
+}
+
+#main .inner {
+	position: relative;
+	z-index: 1;
+}
+
+#main form.search {
+	text-align: right;
+	margin : 5px 0;
+}
+
+#main table.community {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+#main table.community tr {
+	display: flex;
+	border-bottom: 1px solid #000;
+}
+
+#main table.community thead tr {
+	border-top: 3px double #000;
+	border-bottom: 3px double #000;
+}
+
+#main table th {
+	font-weight: 700;
+}
+
+#main table.community th, #main table.community td {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 10vw;
+	padding: 5px;
+}
+
+#main table.community th:first-child, #main table.community th:last-child,
+	#main table.community td:first-child, #main table.community td:last-child
+	{
+	width: 5.5vw;
+}
+
+#main table.community th:nth-child(2), #main table.community th:nth-child(3),
+	#main table.community td:nth-child(2), #main table td:nth-child(3) {
+	width: 15vw;
+}
+
+#main table.community td a:hover {
+	text-decoration: underline;
+}
+
+#main .btn-group {
+	text-align: right;
+	margin: 5px 0;
+}
+
+#main .btn {
+	font-size: 1rem;
+	background-color: #79ff2b;
+	color: #fff;
+	outline: none;
+	border: 1px solid #418718;
+	border-radius: 3px;
+	padding: 2px 5px;
+	cursor: pointer;
+}
+
+#main .btn:hover {
+	border: 1px solid #79ff2b;
+	background-color: #418718;
+}
+
+#main table.write {
+	margin: 0 auto;
+	width: 50%;
+}
+
+#main table.write th, table.write td {
+	text-align: left;
+	display: block;
+	font-size: 1.5rem;
+	padding: 5px 0;
+}
+
+#main table.write input, table.write textarea, #main table.write select {
+	width: 100%;
+	font-size: 1.2rem;
+}
