@@ -8,21 +8,17 @@ import javax.sql.DataSource;
 
 public class DBConn {
 	public static Connection getConnection() {
-		Connection conn = null;
 		try {
 			Context initContext = new InitialContext();
-			Context envContext = (Context)initContext.lookup("java:/comp/env");
-			DataSource ds = (DataSource)envContext.lookup("jdbc/tea");
-			conn = ds.getConnection();
-			System.out.println("데이터 베이스 연결 성공");
-		} catch(Exception e) {
+			Context envContext  = (Context)initContext.lookup("java:/comp/env");
+			DataSource ds = (DataSource)envContext.lookup("jdbc/TestDB");
+			Connection conn = ds.getConnection();
+			System.out.println("DB연결 성공");
+			return conn;
+		}catch (Exception e) {
 			e.printStackTrace();
 		}
-		return conn;
-	}
-	
-	public static void main(String[] args) {
-		DBConn.getConnection();
+		return null;
 	}
 }
 
