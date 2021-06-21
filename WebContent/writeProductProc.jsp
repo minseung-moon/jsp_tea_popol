@@ -8,10 +8,10 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 
-	String filePath = "C:\\Users\\YJ\\git\\TeaProject_JSP\\tea\\WebContent\\media\\product";
+	String filePath = "/var/lib/tomcat8/webapps/media/product/";
 	int size = 5*1024*1024;
 	String charSet = "UTF-8";
-	
+	request.setCharacterEncoding("UTF-8");
 	MultipartRequest multi = new MultipartRequest(request, filePath, size, charSet, new DefaultFileRenamePolicy());
 	
 	String name = multi.getParameter("name");

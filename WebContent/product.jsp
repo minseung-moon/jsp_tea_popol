@@ -47,7 +47,7 @@
 				%>
 				<div class="product-card">
 					<a href="productInfo.jsp?idx=<%=dto.getIdx() %>">
-						<img alt="<%=dto.getOriginalFilename() %>" src="./media/product/<%=dto.getSaveFilename()%>">
+						<img alt="<%=dto.getOriginalFilename() %>" src="../../media/product/<%=dto.getSaveFilename()%>">
 						<span><%=dto.getName() %></span>
 						<span><%=dto.getPrice() %>원</span>
 					</a>

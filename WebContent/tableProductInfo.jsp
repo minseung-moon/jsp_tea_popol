@@ -25,7 +25,7 @@
 			<table class="product">
 				<tr>
 					<td rowspan="5" class="img-space">
-						<img alt="<%=dto.getOriginalFilename() %>" src="./media/tableProduct/<%=dto.getSaveFilename()%>">
+						<img alt="<%=dto.getOriginalFilename() %>" src="../../media/tableProduct/<%=dto.getSaveFilename()%>">
 					</td>
 					<th> 제품명 </th>
 					<td><%=dto.getName() %></td>

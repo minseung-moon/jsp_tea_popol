@@ -48,7 +48,8 @@ public class teaProductDAO {
 		boolean check = false;
 		
 		try {
-			sql = "insert into Product(name, price, category, stock, description, saveFilename, originalFilename) values( ?, ?, ?, ?, ?, ?, ?)";
+			sql = "insert into product(name, price, category, stock, description, saveFilename, originalFilename) values( ?, ?, ?, ?, ?, ?, ?)";
+			
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, dto.getName());
 			pstmt.setString(2, dto.getPrice());
